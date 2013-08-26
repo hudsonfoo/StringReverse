@@ -1,5 +1,5 @@
+<input type='text' id='r'>
 <script type="text/javascript">
 String.prototype.reverse = function() { return this.split('').reverse().join(''); };
-var inputs = ['Hello World', 'Here we go.', 'Code Kata is fun!'];
-for (var i in inputs) { console.log(inputs[i].reverse()); }
+document.getElementById('r').onkeyup = function() { console.log(document.getElementById('r').value.reverse()); };
 </script>
